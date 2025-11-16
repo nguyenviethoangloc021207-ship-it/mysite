@@ -19,7 +19,7 @@ Xin chào, đây là
 
 
 <div class="introduction"> CHÚNG TÔI LÀ AI </div>
-<img src="/img/doixahay.png" alt="logo" class="logo" width="220" height="200">
+<img src="{{ "img/doixahay.png" | relURL }}" alt="logo" class="logo" width="400" height="200">
 <div class="introduction2"> Các thành viên bao gồm: <br> Nguyễn Viết Hoàng Lộc <br> Nguyễn Đình Ngọc Khoa <br> Bùi Quang Minh <br> Lê Quang Minh <br><br></div>
 
 

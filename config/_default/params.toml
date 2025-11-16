@@ -15,8 +15,8 @@ enableCodeCopy = false
 
 replyByEmail = false
 
- mainSections = ["section1", "section2"]
- robots = ""
+# mainSections = ["section1", "section2"]
+# robots = ""
 
 disableImageOptimization = false
 disableImageOptimizationMD = false
@@ -177,3 +177,6 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [advertisement]
   # adsense = ""
+[custom]
+  css = ["css/custom.css"]
+  js = ["js/cart.js"]

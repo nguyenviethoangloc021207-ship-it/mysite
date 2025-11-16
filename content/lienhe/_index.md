@@ -1,5 +1,6 @@
 ---
 disable_global_css: true  # <--- KHÓA ĐIỀU KIỆN
+
 ---
 <audio id="credit" loop >
     <source src="/website/credit.mp3" type="audio/mp3">

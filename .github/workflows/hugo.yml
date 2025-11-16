@@ -64,7 +64,11 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --environment production
+          
+          echo "=== Build completed ==="
+          echo "Pages created in public/"
+          ls -la public/ | head -20          
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

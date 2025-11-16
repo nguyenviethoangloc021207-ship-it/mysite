@@ -1,1 +1,5 @@
-<link rel="stylesheet" href="/static/css/custom.css">
+{{- /* Custom CSS from static */ -}}
+<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+
+{{- /* Custom JS from static */ -}}
+<script src="{{ "js/cart.js" | relURL }}" defer></script>

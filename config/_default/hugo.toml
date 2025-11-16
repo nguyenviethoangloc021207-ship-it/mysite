@@ -3,7 +3,8 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish" # UNCOMMENT THIS LINE
-baseURL = "https://your_domain.com/"
+baseURL = "https://nguyenviethoangloc021207-ship-it.github.io/mysite/"
+
 defaultContentLanguage = "vi"
 languagecode = "vi"
 title = "Store Of The Depth"

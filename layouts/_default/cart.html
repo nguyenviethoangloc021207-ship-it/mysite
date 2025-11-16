@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="cart-container">
+  <h1> Giỏ Hàng Của Bạn</giohang>
+  
+  <div id="cart-items"></div>
+  
+  <div class="cart-summary">
+    <h3>Tổng cộng: <span id="cart-total">0</span> VNĐ</h3>
+    <button id="checkout-btn" class="checkout-button"> Thanh Toán</button>
+  </div>
+  
+  <div style="margin-top: 2rem; text-align: center;">
+    <a href="/products/" style="color: #667eea; text-decoration: none; font-weight: bold;">← Tiếp tục mua sắm</a>
+  </div>
+</div>
+
+
+
+
+<script src="/js/cart.js"></script>
+{{ end }}

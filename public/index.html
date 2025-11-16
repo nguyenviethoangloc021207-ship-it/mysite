@@ -1,189 +1,1416 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<!doctype html>
+<html
+  lang="vi"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+	<meta name="generator" content="Hugo 0.152.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="vi">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
 
-<head>
-	<meta name="generator" content="Hugo 0.152.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
-<title>My New Hugo Site</title>
+  
+  
+    <title>Store of the Depth</title>
+    <meta name="title" content="Store of the Depth">
+  
 
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fd5566c526ae48aadabd950798a2dc3568536401560eae5caac3765a42a9e7b5.css" integrity="sha256-/VVmxSauSKravZUHmKLcNWhTZAFWDq5cqsN2WkKp57U=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-                color-scheme: dark;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .toc {
-                background: var(--entry);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
-    </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script>
-</head>
-<body class="list" id="top">
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-    </main>
+  
+  
+    <meta name="description" content="Chào mừng đến với cửa hàng">
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/">
+  
     
-<footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+      <link rel="alternate" type="application/rss+xml" href="/index.xml" title="Store of the Depth" />
+  
+    
+      <link rel="alternate" type="application/json" href="/index.json" title="Store of the Depth" />
+  
 
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+  
+  
+    <meta name="author" content="Store of the Depth">
+  
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:site_name" content="Store of the Depth">
+  <meta property="og:title" content="Store of the Depth">
+  <meta property="og:description" content="Chào mừng đến với cửa hàng">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="website">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Store of the Depth">
+  <meta name="twitter:description" content="Chào mừng đến với cửa hàng">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.f3c79557f8e7a1173599ea56d2bea20b112e0db44f6cf2b251e8638694500bb50b2e566552f8392311465ff9083b408f9564334ee8b90044a6f9f0efc53a0bad.css"
+    integrity="sha512-88eVV/jnoRc1mepW0r6iCxEuDbRPbPKyUehjhpRQC7ULLlZlUvg5IxFGX/kIO0CPlWQzTui5AESm&#43;fDvxToLrQ==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.b4b722fcb5d42f34f52b30a92f3521b69f403ca9d96d0d6179eb537cb870f5d83fdf1fe836688d95d5c99fefbda4170487711006e56051fa67ea00da10521721.js" integrity="sha512-tLci/LXULzT1KzCpLzUhtp9APKnZbQ1heetTfLhw9dg/3x/oNmiNldXJn&#43;&#43;9pBcEh3EQBuVgUfpn6gDaEFIXIQ=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.e3d337dd3f18427eb20aa355839d583ef6382bc42e34cfe789adb9358d463ef51f53691e32f524259380d4d3add49162f522426784990f3a5dbd39c33c6ed05a.js"
+      integrity="sha512-49M33T8YQn6yCqNVg51YPvY4K8QuNM/nia25NY1GPvUfU2keMvUkJZOA1NOt1JFi9SJCZ4SZDzpdvTnDPG7QWg=="
+      data-copy="Sao chép"
+      data-copied="Đã sao chép"></script>
+  
+
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.03cb160e3cfdb2667a2e2c80d283bebcf63ff8bbc4b629c9ab2babf6fae1d0c07ad470edae783efa4fabda2ac01c58d60e63b98b3c336be8208460f08f4354f5.js" integrity="sha512-A8sWDjz9smZ6LiyA0oO&#43;vPY/&#43;LvEtinJqyur9vrh0MB61HDtrng&#43;&#43;k&#43;r2irAHFjWDmO5izwza&#43;gghGDwj0NU9Q=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "http:\/\/localhost:1313\/",
+    "name": "Store of the Depth",
+    
+    "inLanguage": "vi",
+    "url": "http:\/\/localhost:1313\/",
+    
+    "publisher" : {
+      "@type": "Person",
+      "name": "Store of the Depth"
+    }
+  }
+  </script>
+
+
+
+  
+  
+
+  
+  
+    <link rel="stylesheet" href="/css/custom.css">
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        Chuyển đến nội dung chính
+      </a>
+    </div>
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between py-6 md:justify-start gap-x-3 pt-[2px] pr-2 md:pr-4 pb-[3px] pl-0">
+  
+  
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium">
+          Store of the Depth
+        </a>
+      
+    </nav>
+    
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+    
+      
+        
+  <a
+  href="/products/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="Sản phẩm"
+  title="">
+  
+  
+    <p class="text-base font-medium">
+      Sản phẩm
+    </p>
+  
 </a>
 
-<script>
-    let menu = document.getElementById('menu');
-    if (menu) {
+
+
+      
         
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
+  <a
+  href="/blog/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="Blog"
+  title="">
+  
+  
+    <p class="text-base font-medium">
+      Blog
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/cart/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="Giỏ hàng"
+  title="">
+  
+  
+    <p class="text-base font-medium">
+      Giỏ hàng
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/lienhe/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="Liên hệ"
+  title="">
+  
+  
+    <p class="text-base font-medium">
+      Liên hệ
+    </p>
+  
+</a>
+
+
+
+      
+    
+
+    
+
+    
+
+    
+      <button
+        id="search-button"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="Tìm kiếm (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
+
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
+
+    
+
+    
+
+    
+      <button
+        id="search-button-mobile"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="Tìm kiếm (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 me-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none text-end max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/products/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="Sản phẩm"
+    title="">
+    
+    
+      <p class="text-bg font-bg">
+        Sản phẩm
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/blog/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="Blog"
+    title="">
+    
+    
+      <p class="text-bg font-bg">
+        Blog
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/cart/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="Giỏ hàng"
+    title="">
+    
+    
+      <p class="text-bg font-bg">
+        Giỏ hàng
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/lienhe/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="Liên hệ"
+    title="">
+    
+    
+      <p class="text-bg font-bg">
+        Liên hệ
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+
+          </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  
+    
+<article
+  class="
+    h-full
+   flex flex-col items-center justify-center text-center">
+  <header class="relative px-1 py-1 flex flex-col items-center mb-3">
+    
+    <h1 class="text-4xl font-extrabold">
+      Store of the Depth
+    </h1>
+    
+      <h2 class="text-xl text-neutral-500 dark:text-neutral-400">
+        Nơi bán những vật phẩm ở đáy sâu
+      </h2>
+    
+    <div class="mt-1 text-2xl">
+      
+
+    </div>
+  </header>
+  <section class="prose dark:prose-invert w-full"><op>
+Xin chào, đây là
+</op>
+<audio id="seawaves" loop >
+    <source src="website/wavesound.mp3" type="audio/mp3">
+</audio>
+<nav class="top-nav">
+    <a href="/products" class="nav-button new-style solid"><sanpham>SẢN PHẨM</sanpham></a>
+    <a href="/blog" class="nav-button new-style hollow"><blog1>BLOG</blog1></a>
+</nav>
+<div class="introduction"> CHÚNG TÔI LÀ AI </div>
+<img src="/img/doixahay.png" alt="logo" class="logo" width="400" height="200">
+<div class="introduction2"> Các thành viên bao gồm: <br> Nguyễn Viết Hoàng Lộc <br> Nguyễn Đình Ngọc Khoa <br> Bùi Quang Minh <br> Lê Quang Minh <br><br></div>
+<!--
+<div class="slider-wrapper">
+  <button class="slider-arrow left" id="prevBtn">&#10094;</button>
+  
+  <div class="slider-container">
+    <div class="slider-items" id="sliderItems">
+      <div class="slide-item">
+        <a href="/products/ao-mu/">
+          <img src="https://wallpapers.com/images/hd/manchester-united-jersey-desktop-7bgnmm0ye9n5vrd0.jpg" alt="Áo MU">
+          <h3>Áo MU</h3>
+          <p class="price">399.000₫</p>
+        </a>
+        <button class="add-to-cart-detail" data-id="ao-mu" data-name="Áo MU" data-price="350000" data-image="https://wallpapers.com/images/hd/manchester-united-jersey-desktop-7bgnmm0ye9n5vrd0.jpg">Thêm vào giỏ</button>
+      </div>
+      <div class="slide-item">
+        <a href="/products/ao-juventus/">
+          <img src="https://assets.adidas.com/images/w_940,f_auto,q_auto/7ab554cc072641ad830d536284cf429b_9366/HR8256_HM6.jpg" alt="Áo Juventus">
+          <h3>Áo Juventus</h3>
+          <p class="price">340.000₫</p>
+        </a>
+        <button class="add-to-cart-detail" data-id="ao-juventus" data-name="Áo Juventus" data-price="340000" data-image="https://assets.adidas.com/images/w_940,f_auto,q_auto/7ab554cc072641ad830d536284cf429b_9366/HR8256_HM6.jpg">Thêm vào giỏ</button>
+      </div>
+      <div class="slide-item">
+        <a href="/products/ao-t1/">
+          <img src="https://down-ph.img.susercontent.com/file/sg-11134201-7rce1-lr2xmvq4lmq748" alt="Áo T1">
+          <h3>Áo T1</h3>
+          <p class="price">500.000₫</p>
+        </a>
+        <button class="add-to-cart-detail" data-id="ao-t1" data-name="Áo T1" data-price="500000" data-image="https://down-ph.img.susercontent.com/file/sg-11134201-7rce1-lr2xmvq4lmq748">Thêm vào giỏ</button>
+      </div>
+      <div class="slide-item">
+        <a href="/products/ao-do-mixi/">
+          <img src="https://product.hstatic.net/200000881795/product/ao-khoac-mixi-8-scaled_8bb77d5894534d6ab3c5961643f1547a_large.jpg" alt="Áo Độ Mixi">
+          <h3>Áo Độ Mixi</h3>
+          <p class="price">499.000₫</p>
+        </a>
+        <button class="add-to-cart-detail" data-id="ao-do-mixi" data-name="Áo Độ Mixi" data-price="250000" data-image="https://product.hstatic.net/200000881795/product/ao-khoac-mixi-8-scaled_8bb77d5894534d6ab3c5961643f1547a_large.jpg">Thêm vào giỏ</button>
+      </div>
+      <div class="slide-item">
+        <a href="/products/keo-kera/">
+          <img src="https://mtv.vn/uploads/2025/03/06/kr1.jpg" alt="Kẹo Kera">
+          <h3>Kẹo Kera</h3>
+          <p class="price">499.000₫</p>
+        </a>
+        <button class="add-to-cart-detail" data-id="keo-kera" data-name="Kẹo Kera" data-price="50000" data-image="https://mtv.vn/uploads/2025/03/06/kr1.jpg">Thêm vào giỏ</button>
+      </div>
+      <div class="slide-item">
+        <a href="/products/lightstick-domdom/">
+          <img src="https://taoanhdep.com/wp-content/uploads/2024/08/lightstick_j97-1.jpg" alt="Lightstick đom đóm">
+          <h3>Lightstick đom đóm</h3>
+          <p class="price">150.000₫</p>
+        </a>
+        <button class="add-to-cart-detail" data-id="lightstick" data-name="Lightstick đom đóm" data-price="150000" data-image="https://taoanhdep.com/wp-content/uploads/2024/08/lightstick_j97-1.jpg">Thêm vào giỏ</button>
+      </div>
+      <div class="slide-item">
+        <a href="/products/goi-om-anime/">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.i_bev0GC_2oqkccYx5MbwAHaHA?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Gối ôm anime">
+          <h3>Gối ôm anime</h3>
+          <p class="price">9,999.000₫</p>
+        </a>
+        <button class="add-to-cart-detail" data-id="goi-om" data-name="Gối ôm anime" data-price="300000" data-image="https://tse3.mm.bing.net/th/id/OIP.i_bev0GC_2oqkccYx5MbwAHaHA?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">Thêm vào giỏ</button>
+      </div>
+      <div class="slide-item">
+        <a href="/products/nem-chua/">
+          <img src="https://th.bing.com/th/id/OIP.ySYj4Q4O6Jn-BiKA-JxFIAHaE7?w=269&h=180&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1" alt="Nem chua">
+          <h3>Nem chua</h3>
+          <p class="price">5.000₫</p>
+        </a>
+        <button class="add-to-cart-detail" data-id="nem-chua" data-name="Nem chua" data-price="80000" data-image="https://th.bing.com/th/id/OIP.ySYj4Q4O6Jn-BiKA-JxFIAHaE7?w=269&h=180&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1">Thêm vào giỏ</button>
+      </div>
+      <div class="slide-item">
+        <a href="/products/dep/">
+          <img src="https://cf.shopee.vn/file/vn-11134201-23020-6oxt6kcaxknv3e" alt="Dép">
+          <h3>Dép</h3>
+          <p class="price">100.000₫</p>
+        </a>
+        <button class="add-to-cart-detail" data-id="dep" data-name="Dép" data-price="100000" data-image="https://cf.shopee.vn/file/vn-11134201-23020-6oxt6kcaxknv3e">Thêm vào giỏ</button>
+      </div>
+      <div class="slide-item">
+        <a href="/products/figure-anime/">
+          <img src="https://i5.walmartimages.com/seo/Nezuko-Kamado-Chibi-Masters-Demon-Slayer-Figure_fb90e950-04fe-458f-83f2-e580405f414d.e1e0c41c520a04c410970cffa2d0564c.jpeg" alt="Figure Anime">
+          <h3>Figure Anime</h3>
+          <p class="price">vô giá</p>
+        </a>
+        <button class="add-to-cart-detail" data-id="figure-anime" data-name="Figure Anime" data-price="800000" data-image="https://i5.walmartimages.com/seo/Nezuko-Kamado-Chibi-Masters-Demon-Slayer-Figure_fb90e950-04fe-458f-83f2-e580405f414d.e1e0c41c520a04c410970cffa2d0564c.jpeg">Thêm vào giỏ</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="slider-arrow right" id="nextBtn">&#10095;</button>
+</div>
+-->
+<style>
+
+/* ======================================= */
+/* CSS CHO THANH ĐIỀU HƯỚNG VÀ NÚT MỚI */
+/* ======================================= */
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 5000;
+}
+
+.nav-button.new-style {
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 0px 50px;
+    margin: 0 10px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background-image: none !important;
+    mix-blend-mode: normal !important;
+    filter: none !important;
+}
+
+/* ———— Sản phẩm: chữ trắng, nền trong suốt ———— */
+.nav-button.new-style.solid {
+    background-color: transparent !important;
+    border: 3px solid white;
+    color: white;
+}
+
+.nav-button.new-style.hollow {
+    background-color: white !important;
+    color: black;
+}
+
+
+.slider-wrapper {
+  position: relative;
+  /* Giữ width 300% */
+  width: 300% !important; 
+  /* THAY ĐỔI: Đẩy thanh trượt sang trái 1000px */
+  margin-left: -560px !important; 
+  /* Loại bỏ margin phải */
+  margin-right: 0 !important;
+  padding: 0; 
+  box-sizing: border-box; 
+  z-index: 1;
+}
+
+
+/* ======================================= */
+/* ĐIỀU CHỈNH KÍCH THƯỚC ITEM (Chiều dọc 180px) */
+/* ======================================= */
+.slide-item {
+  min-width: 16.6667%; 
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.slide-item img {
+  width: 100%;
+  /* Chiều cao 180px */
+  height: 250px !important; 
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* CSS khác của item giữ nguyên */
+.slider-container { overflow: hidden; }
+.slider-items { display: flex; transition: transform 0.5s ease; }
+.slide-item a { text-decoration: none; color: inherit; }
+.slide-item h3 { margin: 10px 0; font-size: 0.95rem; text-align: center; }
+.slide-item .price { color: #acd0ffff; font-weight: bold; font-size: 1rem; text-align: center; margin: 5px 0; }
+.slide-item button { width: 100%; padding: 8px; background: #5a6880ff; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+.slide-item button:hover { background: #5568d3; }
+
+/* ======================================= */
+/* VỊ TRÍ MŨI TÊN (Đã điều chỉnh) */
+/* ======================================= */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+.slider-arrow:hover { background: rgba(0, 0, 0, 0.8); }
+
+/* Vị trí mũi tên bên trong slider-wrapper */
+.slider-arrow.left { 
+    left: 10px; 
+}
+.slider-arrow.right { 
+    right: 10px; 
+}
+
+
+/* ======================================= */
+/* RESPONSIVE CSS */
+/* ======================================= */
+
+@media (max-width: 1200px) {
+  .slide-item {
+    min-width: 25%; /* 4 sản phẩm */
+  }
+}
+
+@media (max-width: 992px) {
+  .slide-item {
+    min-width: 33.33%; /* 3 sản phẩm */
+  }
+}
+
+@media (max-width: 768px) {
+  .slide-item {
+    min-width: 33.33%; /* 3 sản phẩm */
+  }
+  .slider-arrow.left { left: 0px; }
+  .slider-arrow.right { right: 0px; }
+}
+
+@media (max-width: 480px) {
+  .slide-item {
+    min-width: 100%; /* 1 sản phẩm */
+  }
+  /* Trên mobile, giảm width và căn giữa lại để tránh thanh cuộn ngang không cần thiết */
+  .slider-wrapper {
+      width: 95% !important; 
+      margin-left: auto !important;
+      margin-right: auto !important;
+  }
+}
+
+/* ======================================= */
+/* CSS TÙY CHỈNH CHO NÚT SẢN PHẨM/GIỎ HÀNG */
+/* ======================================= */
+
+
+#cart-count {
+    /* Màu sắc nổi bật cho số lượng trong giỏ hàng */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+/*ảnh background*/
+body {
+    background-image: url('https://th.bing.com/th/id/R.77f83686609dd0413ea31effbcffab2d?rik=UFQm15fe0KTrwA&pid=ImgRaw&r=0'); 
+    /*background-image: url('https://wallpaperaccess.com/full/2081895.jpg');*/ 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: scroll; 
+    background-color: #10262cff; 
+}
+
+</style>
+<script>
+
+// JAVASCRIPT KÍCH HOẠT NHẠC NỀN (CHẠY KHI NGƯỜI DÙNG CLICK LẦN ĐẦU)
+// =======================================
+// JAVASCRIPT KÍCH HOẠT 2 NHẠC NỀN CÙNG LÚC
+// =======================================
+(function() {
+    const mainMusic = document.getElementById('backgroundMusic');
+    const seawaveSound = document.getElementById('seawaves');
+
+    function tryPlayAllMusic() {
+        // Cố gắng chạy nhạc nền chính
+        if (mainMusic) {
+            mainMusic.play().catch(error => {
+                console.log("Không thể chạy nhạc chính.");
+            });
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        // Cố gắng chạy âm thanh hiệu ứng (sóng biển)
+        if (seawaveSound) {
+            seawaveSound.play().catch(error => {
+                console.log("Không thể chạy âm thanh sóng biển.");
+            });
+        }
+
+        // Sau lần tương tác đầu tiên, gỡ bỏ listener
+        if (mainMusic || seawaveSound) {
+            document.removeEventListener('click', tryPlayAllMusic);
+            document.removeEventListener('touchstart', tryPlayAllMusic);
+            console.log("Cả hai âm thanh đã được kích hoạt.");
         }
     }
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
+    // Lắng nghe sự kiện tương tác của người dùng
+    document.addEventListener('click', tryPlayAllMusic);
+    document.addEventListener('touchstart', tryPlayAllMusic);
+})();
+
+// Code Slider cũ sẽ nằm tiếp ở dưới đây...
+
+
+
+// Code Slider cũ sẽ nằm tiếp ở dưới đây...
+
+
+
+
+
+(function() {
+  let currentIndex = 0;
+  const slider = document.getElementById('sliderItems');
+  const items = document.querySelectorAll('.slide-item');
+  const totalItems = items.length;
+  let itemsPerView = getItemsPerView();
+  let maxIndex = calculateMaxIndex();
+
+  function getItemsPerView() {
+
+    if (window.innerWidth <= 480) {
+      return 1; 
+    } else if (window.innerWidth <= 768) {
+      return 3; 
+    } else if (window.innerWidth <= 992) {
+      return 3;
+    } else if (window.innerWidth <= 1200) {
+      return 4;
+    } else if (window.innerWidth <= 1600) {
+      return 5;
+    } else {
+
+      return 6; 
+    }
+  }
+
+  function calculateMaxIndex() {
+    itemsPerView = getItemsPerView(); 
+    return totalItems - itemsPerView;
+  }
+
+  function updateSlider() {
+    maxIndex = calculateMaxIndex();
+    
+    if (currentIndex > maxIndex) {
+      currentIndex = maxIndex;
+    }
+    if (currentIndex < 0) {
+      currentIndex = 0;
+    }
+    
+    const itemWidth = items[0].offsetWidth; 
+    slider.style.transform = 'translateX(-' + (currentIndex * itemWidth) + 'px)';
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', function() {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = maxIndex; 
+    }
+    updateSlider();
+  });
+
+  document.getElementById('nextBtn').addEventListener('click', function() {
+    if (currentIndex < maxIndex) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateSlider();
+  });
+
+  // Tự động trượt (Auto slide) - Đã tắt theo yêu cầu người dùng
+  // setInterval(function() {
+  //   if (currentIndex < maxIndex) {
+  //     currentIndex++;
+  //   } else {
+  //     currentIndex = 0;
+  //   }
+  //   updateSlider();
+  // }, 4000);
+
+  // Cập nhật khi thay đổi kích thước cửa sổ
+  let resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(updateSlider, 200);
+  });
+  
+  // Gọi 1 lần lúc tải trang
+  updateSlider();
+})();
+</script>
+<script src="/js/cart.js"></script></section>
+</article>
+<section>
+  
+
+
+
+</section>
+
+  
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Cuộn lên trên cùng"
+    title="Cuộn lên trên cùng">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2025
+          Store of the Depth
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        Bảo trợ bởi <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js"
+    integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+    <script>
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  
+  class ShoppingCart {
+    constructor() {
+      this.items = this.loadCart();
+      this.init();
+    }
+
+    
+    loadCart() {
+      try {
+        const saved = localStorage.getItem('shoppingCart');
+        return saved ? JSON.parse(saved) : [];
+      } catch (e) {
+        console.error('Lỗi load cart:', e);
+        return [];
+      }
+    }
+
+    
+    saveCart() {
+      try {
+        localStorage.setItem('shoppingCart', JSON.stringify(this.items));
+        this.updateCartCount();
+        console.log('Cart saved:', this.items);
+      } catch (e) {
+        console.error('Lỗi save cart:', e);
+      }
+    }
+
+    
+    addItem(id, name, price, image) {
+      console.log('Adding item:', {id, name, price, image});
+      
+      const existingItem = this.items.find(item => item.id === id);
+      
+      if (existingItem) {
+        existingItem.quantity += 1;
+      } else {
+        this.items.push({
+          id: id,
+          name: name,
+          price: parseInt(price),
+          image: image || '/images/placeholder.jpg',
+          quantity: 1
         });
-    });
+      }
+      
+      this.saveCart();
+      this.showNotification(`✓ Đã thêm "${name}" vào giỏ hàng`);
+    }
 
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+    
+    removeItem(id) {
+      this.items = this.items.filter(item => item.id !== id);
+      this.saveCart();
+      this.renderCart();
+      this.showNotification('Đã xóa sản phẩm');
+    }
+
+    
+    updateQuantity(id, quantity) {
+      const item = this.items.find(item => item.id === id);
+      if (item) {
+        item.quantity = parseInt(quantity);
+        if (item.quantity <= 0) {
+          this.removeItem(id);
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+          this.saveCart();
+          this.renderCart();
         }
-    };
+      }
+    }
 
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
-            localStorage.setItem("pref-theme", 'light');
+    
+    getTotal() {
+      return this.items.reduce((total, item) => total + (item.price * item.quantity), 0);
+    }
+
+    
+    updateCartCount() {
+      const totalItems = this.items.reduce((sum, item) => sum + item.quantity, 0);
+      const countElements = document.querySelectorAll('#cart-count, .cart-count');
+      countElements.forEach(el => {
+        el.textContent = totalItems;
+        if (totalItems > 0) {
+          el.style.display = 'inline-block';
         } else {
-            html.dataset.theme = 'dark';
-            localStorage.setItem("pref-theme", 'dark');
+          el.style.display = 'none';
         }
-    })
+      });
+      console.log('Cart count updated:', totalItems);
+    }
+
+    
+    showNotification(message) {
+      
+      const oldNotif = document.querySelector('.cart-notification');
+      if (oldNotif) oldNotif.remove();
+      
+      const notification = document.createElement('div');
+      notification.className = 'cart-notification';
+      notification.textContent = message;
+      document.body.appendChild(notification);
+      
+      setTimeout(() => {
+        notification.classList.add('show');
+      }, 100);
+      
+      setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => notification.remove(), 300);
+      }, 2500);
+    }
+
+    
+    renderCart() {
+      const cartItemsContainer = document.getElementById('cart-items');
+      const cartTotalElement = document.getElementById('cart-total');
+      
+      if (!cartItemsContainer) {
+        console.log('Cart container not found');
+        return;
+      }
+
+      if (this.items.length === 0) {
+        cartItemsContainer.innerHTML = '<div class="empty-cart"><p>🛒 Giỏ hàng trống</p><p><a href="/products/">Xem sản phẩm</a></p></div>';
+        if (cartTotalElement) cartTotalElement.textContent = '0';
+        return;
+      }
+
+      cartItemsContainer.innerHTML = this.items.map(item => `
+        <div class="cart-item" data-id="${item.id}">
+          <img src="${item.image}" alt="${item.name}" onerror="this.src='/images/placeholder.jpg'">
+          <div class="cart-item-info">
+            <h3>${item.name}</h3>
+            <p class="item-price">${item.price.toLocaleString('vi-VN')} VNĐ</p>
+          </div>
+          <div class="cart-item-controls">
+            <button class="quantity-btn minus-btn" data-id="${item.id}">-</button>
+            <input type="number" class="quantity-input" value="${item.quantity}" min="1" data-id="${item.id}">
+            <button class="quantity-btn plus-btn" data-id="${item.id}">+</button>
+          </div>
+          <div class="cart-item-total">
+            ${(item.price * item.quantity).toLocaleString('vi-VN')} VNĐ
+          </div>
+          <button class="remove-btn" data-id="${item.id}">🗑️</button>
+        </div>
+      `).join('');
+
+      if (cartTotalElement) {
+        cartTotalElement.textContent = this.getTotal().toLocaleString('vi-VN');
+      }
+
+      
+      this.attachCartEventListeners();
+    }
+
+    
+    attachCartEventListeners() {
+      
+      document.querySelectorAll('.minus-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const id = e.target.dataset.id;
+          const item = this.items.find(i => i.id === id);
+          if (item) {
+            this.updateQuantity(id, item.quantity - 1);
+          }
+        });
+      });
+
+      
+      document.querySelectorAll('.plus-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const id = e.target.dataset.id;
+          const item = this.items.find(i => i.id === id);
+          if (item) {
+            this.updateQuantity(id, item.quantity + 1);
+          }
+        });
+      });
+
+      
+      document.querySelectorAll('.quantity-input').forEach(input => {
+        input.addEventListener('change', (e) => {
+          const id = e.target.dataset.id;
+          const quantity = parseInt(e.target.value) || 1;
+          this.updateQuantity(id, quantity);
+        });
+      });
+
+      
+      document.querySelectorAll('.remove-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const id = e.target.dataset.id;
+          if (confirm('Bạn có chắc muốn xóa sản phẩm này?')) {
+            this.removeItem(id);
+          }
+        });
+      });
+    }
+
+    
+    checkout() {
+      if (this.items.length === 0) {
+        alert('Giỏ hàng trống!');
+        return;
+      }
+
+      const total = this.getTotal();
+      const itemsList = this.items.map(item => 
+        `• ${item.name} x${item.quantity} = ${(item.price * item.quantity).toLocaleString('vi-VN')} VNĐ`
+      ).join('\n');
+
+      if (confirm(`🛒 XÁC NHẬN THANH TOÁN\n\n${itemsList}\n\n💰 Tổng cộng: ${total.toLocaleString('vi-VN')} VNĐ\n\n(Đây là giao dịch giả - không mất tiền thật)`)) {
+        alert('✅ Thanh toán thành công!\n\nCảm ơn bạn đã mua hàng!\n(Đây là demo - không có giao dịch thật)');
+        this.items = [];
+        this.saveCart();
+        this.renderCart();
+      }
+    }
+
+    
+    searchProducts(query) {
+      const products = document.querySelectorAll('.product-card');
+      const searchTerm = query.toLowerCase().trim();
+
+      products.forEach(product => {
+        const name = (product.dataset.name || '').toLowerCase();
+        if (name.includes(searchTerm) || searchTerm === '') {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+
+    
+    init() {
+      console.log('Cart initialized');
+      this.updateCartCount();
+
+      
+      document.addEventListener('click', (e) => {
+        const target = e.target;
+        
+        if (target.classList.contains('add-to-cart') || 
+            target.classList.contains('add-to-cart-detail') ||
+            target.closest('.add-to-cart') ||
+            target.closest('.add-to-cart-detail')) {
+          
+          e.preventDefault();
+          
+          const btn = target.classList.contains('add-to-cart') || 
+                      target.classList.contains('add-to-cart-detail') 
+                      ? target 
+                      : target.closest('.add-to-cart, .add-to-cart-detail');
+          
+          const id = btn.dataset.id || btn.getAttribute('data-id');
+          const name = btn.dataset.name || btn.getAttribute('data-name');
+          const price = btn.dataset.price || btn.getAttribute('data-price');
+          const image = btn.dataset.image || btn.getAttribute('data-image');
+          
+          console.log('Button clicked:', {id, name, price, image});
+          
+          if (id && name && price) {
+            this.addItem(id, name, price, image);
+          } else {
+            console.error('Missing data attributes:', {id, name, price, image});
+          }
+        }
+      });
+
+      
+      const checkoutBtn = document.getElementById('checkout-btn');
+      if (checkoutBtn) {
+        checkoutBtn.addEventListener('click', () => this.checkout());
+      }
+
+      
+      if (document.getElementById('cart-items')) {
+        console.log('Rendering cart page');
+        this.renderCart();
+      }
+
+      
+      const searchInput = document.getElementById('search-input');
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          this.searchProducts(e.target.value);
+        });
+      }
+    }
+  }
+
+  
+  window.cart = new ShoppingCart();
+  console.log('Shopping cart ready!');
+});
 
 </script>
-</body>
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="http://localhost:1313/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Tìm kiếm"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Đóng (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
 
+    </div>
+  </body>
+  
 </html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gaming on Store of the Depth</title>
+    <link>http://localhost:1313/tags/gaming/</link>
+    <description>Recent content in Gaming on Store of the Depth</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <managingEditor>youremail@example.com (Store of the Depth)</managingEditor>
+    <webMaster>youremail@example.com (Store of the Depth)</webMaster>
+    <copyright>© 2025 Store of the Depth</copyright>
+    <lastBuildDate>Thu, 14 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/ao-do-mixi/</link>
+      <pubDate>Thu, 14 Nov 2024 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Store of the Depth)</author>
+      <guid>http://localhost:1313/blog/ao-do-mixi/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/ao-t1/</link>
+      <pubDate>Thu, 14 Nov 2024 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Store of the Depth)</author>
+      <guid>http://localhost:1313/blog/ao-t1/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

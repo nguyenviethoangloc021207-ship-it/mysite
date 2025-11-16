@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nguyenviethoangloc021207-ship-it.github.io/mysite/sitemap.xml

@@ -1,44 +1,36 @@
-name: Deploy Hugo to GitHub Pages
+name: Deploy Hugo Site
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    branches: [main]          # Trigger on push to main branch
+  workflow_dispatch:          # Allows manual trigger from GitHub UI
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      # Step 1: Checkout your repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: true     # Important if Blowfish theme is a git submodule
           fetch-depth: 0
 
+      # Step 2: Setup Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-          extended: true
+          extended: true       # Required for themes with SCSS/SASS
 
-      - name: Build
+      # Step 3: Build the Hugo site
+      - name: Build Hugo site
         run: hugo --minify
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      # Step 4: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: ./public
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+          publish_dir: ./public
+          github_token: ${{ secrets.GITHUB_TOKEN }}

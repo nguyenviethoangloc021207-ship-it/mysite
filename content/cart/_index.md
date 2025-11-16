@@ -1,9 +1,11 @@
 ---
-title: "Giá» HÃ ng"
-description: "Xem láº¡i cÃ¡c váº­t pháº©m báº¡n Ä‘Ã£ chá»n"
+title: "Giỏ Hàng"
+description: "Xem những vật phẩm bạn đã chọn"
 summary: "cart"
 layout: "simple"
 ---
+
+
 <style>
 
 
